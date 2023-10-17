@@ -6,7 +6,6 @@ namespace SignalRSample.Hubs
     {
         public static int notificationCounter = 0;
         public static List<string> messages = new();
-
         public async Task SendMessage(string message)
         {
             if (!string.IsNullOrEmpty(message))
